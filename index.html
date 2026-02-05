@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Demo Web Page</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+        background: linear-gradient(135deg, #111827, #1f2937);
+        color: #f9fafb;
+      }
+
+      header {
+        padding: 48px 24px 24px;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(2rem, 4vw, 3rem);
+      }
+
+      p {
+        margin: 0 auto 24px;
+        max-width: 640px;
+        color: #d1d5db;
+        line-height: 1.6;
+      }
+
+      .cta {
+        display: inline-flex;
+        gap: 12px;
+        align-items: center;
+        padding: 12px 20px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.1);
+        color: inherit;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 16px;
+        padding: 24px;
+        max-width: 960px;
+        margin: 0 auto 48px;
+      }
+
+      .card {
+        padding: 18px;
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+      }
+
+      .card h2 {
+        margin: 0 0 8px;
+        font-size: 1.1rem;
+      }
+
+      footer {
+        text-align: center;
+        padding: 24px;
+        color: #9ca3af;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Пример HTML-страницы</h1>
+      <p>
+        Это простая веб-страница с аккуратной версткой и минимальной стилизацией,
+        которую можно использовать как стартовый шаблон.
+      </p>
+      <a class="cta" href="#features">Посмотреть возможности →</a>
+    </header>
+
+    <main id="features" class="grid">
+      <section class="card">
+        <h2>Быстрый старт</h2>
+        <p>Подойдет для лендинга, портфолио или презентации продукта.</p>
+      </section>
+      <section class="card">
+        <h2>Адаптивность</h2>
+        <p>Сетка автоматически подстраивается под размер экрана.</p>
+      </section>
+      <section class="card">
+        <h2>Чистый HTML</h2>
+        <p>Никаких зависимостей — только HTML и CSS внутри одного файла.</p>
+      </section>
+      <section class="card">
+        <h2>Готово к расширению</h2>
+        <p>Добавляйте секции, формы и интеграции по мере необходимости.</p>
+      </section>
+    </main>
+
+    <footer>
+      © 2025 Demo Web Page
+    </footer>
+  </body>
+</html>
